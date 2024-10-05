@@ -1,0 +1,30 @@
+.container{
+    /*paveikslelio kelyje nurodyta "../" tai rodo, kad kreipiasi katalogu auk6tyn*/
+    /*jei paveikslelis neveiktu, tai taikytu nustatyta spalva*/
+    /*background: #43e869 url('../img/demo-bg.jpg');*/
+    /*kai paveikslelis labai dideles raiskos, jis netelpa ekrane, sis kodas ji pritaiko ekrane*/
+    /*background-size: cover;*/
+
+    /*uzdeda spalva, jei neveiktu paveikslelis ir pasako, kad sumazinto paveikslelio nekartotu*/
+    background: #43e869 url('../img/demo-bg.jpg') no-repeat;
+   /* gali dar buti repeat-x, repeat-y*/
+    background-size: contain;
+}
+
+table{
+    width: 100%;/*nustato lentelės plotį per visą puslapį*/
+    border-collapse: collapse;/*Panaikina tarpelius tarp lenteles remeliu*/
+}
+
+td,th{
+    border: 1px solid #000;
+    text-align: center;
+}
+
+tr:nth-child(2n+2){
+    background-color: #2fa34e;
+}
+
+tr:hover:not(:first-child){/*Isskyrus pirma eilute*/
+    background-color: #43e869;
+}
